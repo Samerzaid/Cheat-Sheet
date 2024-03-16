@@ -1,0 +1,61 @@
+
+1. *git init*: Initierar ett nytt Git-repositorium i den aktuella mappen.
+2. *git clone <repo-url>*: Klonar ett befintligt Git-repositorium till den lokala maskinen.
+3. *git add <filnamn>*: Lägger till ändringar i en specifik fil till "staging area" för att förbereda för en commit.
+4. *git status*: Visar status för arbetskatalogen och visar vilka filer som har ändrats, lagts till eller tagits bort.
+5. *git diff*: Visar skillnaden mellan arbetskatalogen och "staging area".
+6. *git commit -m "Meddelande"*: Skapar en commit med de ändringar som finns i "staging area" och en medföljande commit-beskrivning.
+7. *git reset <filnamn>*: Återställer en specifik fil till dess tillstånd i HEAD.
+8. *git reset --soft HEAD~1*: Återställer den senaste commiten och behåller ändringarna i "staging area".
+9. *git reset --hard HEAD~1*: Återställer den senaste commiten och tar bort alla ändringar.
+10. *git branch*: Visar en lista över befintliga grenar och markerar den aktuella grenen.
+11. *git branch <gren-namn>*: Skapar en ny gren med det angivna namnet.
+12. *git checkout <gren-namn>*: Byter till en annan gren.
+13. *git merge <gren>*: Sammanför en annan gren med den aktuella grenen.
+14. *git remote add origin <repo-url>*: Lägger till en fjärrreferens till det angivna Git-repositoriet.
+15. *git push -u origin <gren>*: Skickar lokala commits till fjärrservern och länkar den lokala grenen med en fjärrgren.
+16. *git pull*: Hämtar och sammanfogar förändringar från fjärrservern till den lokala grenen.
+17. *git fetch*: Hämtar förändringar från fjärrservern men sammanfogar dem inte med den lokala grenen.
+18. *git log*: Visar en logg över commits, inklusive författare, datum och commit-meddelanden.
+19. *git show <commit-id>*: Visar detaljerad information om en specifik commit, inklusive ändringar.
+20. *git tag*: Visar en lista över taggar i projektet.
+21. *git tag -a <tag-namn> -m "Meddelande"*: Skapar en annoterad tagg med ett meddelande.
+22. *git checkout -- <filnamn>*: Återställer en specifik fil till sitt tillstånd i den senaste commiten.
+23. *git revert <commit-id>*: Ångra en specifik commit genom att skapa en ny commit som ångrar dess ändringar.
+24. *git rm <filnamn>*: Tar bort en specifik fil från arbetskatalogen och "staging area".
+25. *git mv <gammalt-filnamn> <nytt-filnamn>*: Flyttar eller döper om en fil och uppdaterar Git-indexet.
+26. *git config --global user.name "<Användarnamn>"*: Ställer in användarnamn globalt för Git.
+27. *git config --global user.email "<E-postadress>"*: Ställer in e-postadress globalt för Git.
+28. *git stash*: Sparar ändringar som inte är redo att committas och rensar arbetskatalogen.
+29. *git stash apply*: Återställer de senaste sparade ändringarna utan att ta bort dem från stash-stacken.
+30. *git stash pop*: Återställer de senaste sparade ändringarna och tar bort dem från stash-stacken.
+31. *git cherry-pick <commit-id>*: Applicerar en specifik commit från en annan gren till den aktuella grenen.
+32. *git bisect start*: Startar en binär sökning för att hitta en buggintroducerande commit.
+33. *git bisect bad*: Markerar den aktuella commiten som dålig och går vidare till nästa commit att testa.
+34. *git bisect good*: Markerar den aktuella commiten som bra och går vidare till nästa commit att testa.
+35. *git bisect reset*: Avbryter en binär sökning och återställer tillståndet innan sökningen påbörjades.
+36. *git reflog*: Visar en logg över alla referenser, inklusive HEAD:s historik.
+37. *git rebase <gren>*: Omorganiserar commit-historiken genom att basera den på en annan grens historik.
+38. *git remote -v*: Visar en lista över fjärrreferenser tillsammans med deras URL:er.
+39. *git remote show origin*: Visar detaljerad information om en specifik fjärrreferens.
+40. *git config --list*: Visar en lista över alla Git-konfigurationsinställningar.
+41. *git clean -n*: Visar en lista över filer och mappar som skulle tas bort vid användning av git clean.
+42. *git clean -f*: Tar bort obekräftade filer och mappar från arbetskatalogen.
+43. *git clean -df*: Tar bort obekräftade filer och mappar, inklusive de som är listade i .gitignore-filen.
+44. *git log --oneline*: Visar en kortare version av commit-loggen med bara commit-ID och meddelanden.
+45. *git log --graph*: Visar commit-historiken som en graf.
+46. *git log --since=<datum>*: Visar commit-loggen sedan det angivna datumet.
+47. *git log --author="<författare>"*: Visar commit-loggen för en specifik författare.
+48. *git log --grep="<sökterm>"*: Visar commit-loggen för commits som innehåller den angivna söktermen.
+49. *git remote rename <gammalt-namn> <nytt-namn>*: Byter namn på en fjärrreferens.
+50. *git remote rm <namn>*: Tar bort en fjärrreferens.
+51. *git push --force*: T
+52.	git push –force: Tvingar en uppdatering av fjärrgrenen och skriver över dess historik.
+53. *git pull --rebase*: Hämtar förändringar från fjärrservern och replays dina lokala commits på toppen av dem istället för att skapa en sammanfogning.
+54. *git fetch --all*: Hämtar alla förändringar från alla fjärrreferenser.
+55. *git checkout -b <ny-gren>*: Skapar en ny gren och byter till den direkt.
+56. *git log --stat*: Visar en sammanfattning av ändringar för varje commit.
+57. *git log --graph --oneline --all*: Visar en kort och grafisk visning av hela commit-historiken.
+58. *git merge --abort*: Avbryter en pågående merge-process och återställer tillståndet innan merge påbörjades.
+59. *git tag -d <tagg-namn>*: Tar bort en tagg.
+60. *git reflog expire --expire=now --all*: Tar bort gamla referenser från refloggen för att rensa upp historiken.
